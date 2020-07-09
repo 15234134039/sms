@@ -20,7 +20,7 @@ public class SendSmsImpl implements SendSms {
     @Override
     public boolean send(String phoneNum, String templateCode, Map<String, Object> code) {
         // 连接阿里云
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4G8zvobyNVMYiLVHS8NU", "mraGoCjfoYZwlF7avEgB2NuAkkqfYM");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "", "");
         IAcsClient client = new DefaultAcsClient(profile);
 
         // 构建请求
